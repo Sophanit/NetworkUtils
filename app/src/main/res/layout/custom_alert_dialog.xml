@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="30dp"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_view_red"
+        android:minHeight="20dp"
+        android:minWidth="20dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_close_cross" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:maxEms="80"
+        android:padding="10dp"
+        android:text="@string/app_name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvOtherMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMessage"
+        android:maxEms="80"
+        android:padding="10dp"
+        android:text="@string/app_name"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnOpenWifiSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOtherMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_view_red"
+        android:paddingEnd="35dp"
+        android:paddingStart="35dp"
+        android:text="Open Wifi Settings"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
